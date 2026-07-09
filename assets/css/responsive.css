@@ -1,0 +1,152 @@
+/*====================================
+        Responsive
+=====================================*/
+
+@media (max-width:768px){
+
+    header,
+    .login-section,
+    main,
+    .bottom-menu{
+
+        width:92%;
+
+    }
+
+    .logo-box{
+
+        padding:85px 20px 35px;
+
+        border-radius:28px;
+
+    }
+
+    .logo-circle{
+
+        width:100px;
+
+        height:100px;
+
+    }
+
+    .logo-circle img{
+
+        width:60px;
+
+    }
+
+    .logo-box h1{
+
+        font-size:26px;
+
+    }
+
+    .logo-box p{
+
+        font-size:14px;
+
+    }
+
+    .login-btn{
+
+        height:60px;
+
+        font-size:17px;
+
+    }
+
+    .province-card{
+
+        padding:16px 18px;
+
+    }
+
+    .province-name{
+
+        font-size:16px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .logo-box{
+
+        padding:75px 15px 30px;
+
+    }
+
+    .logo-circle{
+
+        width:90px;
+
+        height:90px;
+
+        top:-45px;
+
+    }
+
+    .logo-circle img{
+
+        width:55px;
+
+    }
+
+    .logo-box h1{
+
+        font-size:22px;
+
+    }
+
+    .logo-box p{
+
+        font-size:13px;
+
+    }
+
+    .login-btn{
+
+        height:55px;
+
+        font-size:16px;
+
+    }
+
+    .province-name{
+
+        font-size:15px;
+
+    }
+
+    .province-name i{
+
+        width:36px;
+
+        height:36px;
+
+        font-size:14px;
+
+    }
+
+    .bottom-menu{
+
+        height:70px;
+
+        bottom:10px;
+
+    }
+
+    .menu-item i{
+
+        font-size:20px;
+
+    }
+
+    .menu-item span{
+
+        font-size:12px;
+
+    }
+
+}
