@@ -50,8 +50,6 @@ provinces.forEach((province, index) => {
 
     card.className = "province-card";
 
-    card.style.animationDelay = `${index * 0.05}s`;
-
     card.innerHTML = `
 
         <div class="province-name">

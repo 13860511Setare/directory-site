@@ -1,4 +1,76 @@
 /*====================================
+        Desktop
+=====================================*/
+
+@media (min-width:992px){
+
+    /* بنر */
+    .banner-area{
+
+        max-width:900px;
+
+        margin:30px auto;
+
+    }
+
+    .banner-image{
+
+        width:100%;
+
+    }
+
+    /* دکمه ورود */
+
+    .login-section{
+
+        max-width:900px;
+
+        margin:25px auto;
+
+    }
+
+    .login-btn{
+
+        height:72px;
+
+        font-size:22px;
+
+    }
+
+    /* لیست استان ها */
+
+    main{
+
+        max-width:900px;
+
+        margin:auto;
+
+    }
+
+    .province-card{
+
+        padding:22px 28px;
+
+    }
+
+    .province-name{
+
+        font-size:20px;
+
+    }
+
+    .province-name i{
+
+        width:48px;
+
+        height:48px;
+
+        font-size:18px;
+
+    }
+
+}
+/*====================================
         Responsive
 =====================================*/
 
