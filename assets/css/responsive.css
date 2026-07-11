@@ -4,11 +4,12 @@
 
 @media (min-width:992px){
 
-    /* بنر */
+    /* Banner */
+
     .banner-area{
 
-        max-width:900px;
-
+        width:92%;
+        max-width:700px;
         margin:30px auto;
 
     }
@@ -16,15 +17,16 @@
     .banner-image{
 
         width:100%;
+        display:block;
 
     }
 
-    /* دکمه ورود */
+    /* Login */
 
     .login-section{
 
-        max-width:900px;
-
+        width:92%;
+        max-width:700px;
         margin:25px auto;
 
     }
@@ -32,24 +34,23 @@
     .login-btn{
 
         height:72px;
-
         font-size:22px;
 
     }
 
-    /* لیست استان ها */
+    /* Province List */
 
     main{
 
-        max-width:900px;
-
+        width:92%;
+        max-width:700px;
         margin:auto;
 
     }
 
     .province-card{
 
-        padding:22px 28px;
+        padding:24px 30px;
 
     }
 
@@ -62,68 +63,74 @@
     .province-name i{
 
         width:48px;
-
         height:48px;
-
         font-size:18px;
 
     }
 
 }
+
+
 /*====================================
-        Responsive
+        Tablet
 =====================================*/
 
 @media (max-width:768px){
 
-    header,
+    .banner-area,
     .login-section,
-    main,
-    .bottom-menu{
+    main{
 
         width:92%;
-
-    }
-
-    .logo-box{
-
-        padding:85px 20px 35px;
-
-        border-radius:28px;
-
-    }
-
-    .logo-circle{
-
-        width:100px;
-
-        height:100px;
-
-    }
-
-    .logo-circle img{
-
-        width:60px;
-
-    }
-
-    .logo-box h1{
-
-        font-size:26px;
-
-    }
-
-    .logo-box p{
-
-        font-size:14px;
 
     }
 
     .login-btn{
 
         height:60px;
-
         font-size:17px;
+
+    }
+
+    .province-card{
+
+        padding:18px 20px;
+
+    }
+
+    .province-name{
+
+        font-size:16px;
+
+    }
+
+}
+
+
+/*====================================
+        Mobile
+=====================================*/
+
+@media (max-width:480px){
+
+    .banner-area{
+
+        width:92%;
+        margin:15px auto 20px;
+
+    }
+
+    .banner-image{
+
+        width:100%;
+        display:block;
+
+    }
+
+    .login-btn{
+
+        height:56px;
+        font-size:16px;
 
     }
 
@@ -139,73 +146,24 @@
 
     }
 
-}
-
-@media (max-width:480px){
-
-    .logo-box{
-
-        padding:75px 15px 30px;
-
-    }
-
-    .logo-circle{
-
-        width:90px;
-
-        height:90px;
-
-        top:-45px;
-
-    }
-
-    .logo-circle img{
-
-        width:55px;
-
-    }
-
-    .logo-box h1{
-
-        font-size:22px;
-
-    }
-
-    .logo-box p{
-
-        font-size:13px;
-
-    }
-
-    .login-btn{
-
-        height:55px;
-
-        font-size:16px;
-
-    }
-
-    .province-name{
-
-        font-size:15px;
-
-    }
-
     .province-name i{
 
-        width:36px;
-
-        height:36px;
-
-        font-size:14px;
+        width:40px;
+        height:40px;
+        font-size:15px;
 
     }
 
     .bottom-menu{
 
         height:70px;
+        bottom:0;
 
-        bottom:10px;
+    }
+
+    .menu-item{
+
+        transform:translateY(3px);
 
     }
 
