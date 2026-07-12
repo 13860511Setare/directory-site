@@ -180,3 +180,76 @@
     }
 
 }
+.breadcrumb{
+
+    width:92%;
+
+}
+
+@media (max-width:480px){
+
+    .breadcrumb{
+
+        padding:14px 16px;
+
+        gap:8px;
+
+    }
+
+    .breadcrumb span{
+
+        font-size:13px;
+
+    }
+
+}
+/* ==========================
+      City Page Responsive
+========================== */
+
+@media (max-width:768px){
+
+    .breadcrumb{
+
+        width:92%;
+        margin:15px auto;
+        font-size:14px;
+        flex-wrap:wrap;
+
+    }
+
+    .banner-content h1{
+
+        font-size:24px;
+
+    }
+
+    .banner-content p{
+
+        font-size:14px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .breadcrumb{
+
+        font-size:13px;
+
+    }
+
+    .banner-content h1{
+
+        font-size:20px;
+
+    }
+
+    .banner-content p{
+
+        font-size:13px;
+
+    }
+
+}
