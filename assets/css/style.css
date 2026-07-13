@@ -26,6 +26,7 @@ html{
 }
 
 body{
+    animation:pageFade .8s ease;
 
     direction:rtl;
 
@@ -106,14 +107,15 @@ body{
 /* ================================
           Main Layout
 ================================ */
-
 .banner-area,
 .login-section,
+.breadcrumb,
 main{
 
-    width: 92%;
-    max-width: 700px;
-    margin: auto;
+    width:92%;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
 
 }
 /*====================================
@@ -185,7 +187,9 @@ main{
 
 .banner-area{
 
-    margin: 20px auto 30px;
+    margin:20px auto 30px;
+    position:relative;
+    overflow:hidden;
 
 }
 
@@ -289,11 +293,10 @@ main{
 /*====================================
           Login Section
 =====================================*/
-
 .login-section{
 
-    margin-top:15px;
-    margin-bottom:20px;
+    margin-top:14px;
+    margin-bottom:18px;
 
 }
 /*====================================
@@ -304,7 +307,7 @@ main{
 
     width:100%;
 
-    height:75px;
+    height:60px;
 
     border:none;
 
@@ -384,7 +387,31 @@ main{
 /*====================================
           Province Card
 =====================================*/
+.province-card{
 
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:22px;
+    padding:22px 26px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:background-color .2s;
+
+    box-shadow:0 2px 4px rgba(0,0,0,.08);
+
+    opacity:1;
+
+      -webkit-user-select:none;
+    user-select:none;
+
+    -webkit-tap-highlight-color:transparent;
+
+}
 /*====================================
         Province Name
 =====================================*/
@@ -576,11 +603,6 @@ main{
         Page Animation
 =====================================*/
 
-body{
-
-    animation:pageFade .8s ease;
-
-}
 
 @keyframes pageFade{
 
@@ -601,64 +623,47 @@ body{
     }
 
 }
-.province-card{
-
-    background:#fff;
-    border:1px solid #ececec;
-    border-radius:22px;
-    padding:22px 26px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    cursor:pointer;
-
-    transition:background-color .2s;
-
-    box-shadow:0 2px 4px rgba(0,0,0,.08);
-
-    opacity:1;
-
-    -webkit-tap-highlight-color:transparent;
-
-}
-
-a{
-
-    -webkit-tap-highlight-color: transparent;
-
-}
-
+a,
 button{
 
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color:transparent;
+    outline:none;
+
+}
+
+a:focus,
+button:focus,
+div:focus{
+
+    outline: none;
 
 }
 /*====================================
         Breadcrumb
 =====================================*/
-
 .breadcrumb{
 
-    width:92%;
-    max-width:700px;
-    margin:18px auto 25px;
-
-    display:flex;
-    align-items:center;
-    gap:10px;
+    height:60px;
 
     background:#fff;
 
-    padding:16px 22px;
+    border-radius:20px;
 
-    border-radius:18px;
+    padding:0 24px;
 
-    box-shadow:0 2px 8px rgba(0,0,0,.06);
+    margin:18px auto;
+
+    display:flex;
+
+    gap: 10px;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
 
 }
-
 .breadcrumb i{
 
     color:#d90429;
@@ -667,25 +672,25 @@ button{
 
 }
 
-.breadcrumb span{
+.breadcrumb a{
 
-    font-size:15px;
-
-    font-weight:600;
+    text-decoration:none;
 
     color:#444;
 
+    font-size:19px;
+
+    font-weight:700;
+
+    line-height:1;
+
 }
-.banner-area{
-    position:relative;
-    overflow:hidden;
+.breadcrumb a:hover{
+
+    color:#d90429;
+
 }
 
-.banner-image{
-    width:100%;
-    display:block;
-    border-radius:22px;
-}
 
 .banner-area::before{
     content:"";
